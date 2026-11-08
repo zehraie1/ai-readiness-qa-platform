@@ -10,11 +10,23 @@ const MUTED = "#475569";
  * data table that carries the same information (DESIGN_SYSTEM.md: chart data table alternative).
  * The chart is also inert and has Recharts' keyboard layer off, so no hidden element is focusable.
  */
-export function ChartFigure({ caption, chart, table }: { caption: string; chart: ReactNode; table: ReactNode }) {
+export function ChartFigure({
+  caption,
+  chart,
+  table,
+}: {
+  caption: string;
+  chart: ReactNode;
+  table: ReactNode;
+}) {
   return (
     <figure className="space-y-3">
-      <figcaption className="font-semibold">{caption}</figcaption>
-      <div aria-hidden="true" inert className="h-64 w-full rounded-[var(--radius-card)] border border-border bg-surface p-3">
+      <figcaption className="font-semibold text-navy-900">{caption}</figcaption>
+      <div
+        aria-hidden="true"
+        inert
+        className="h-64 w-full rounded-[var(--radius-card)] border border-border bg-surface p-3"
+      >
         {chart}
       </div>
       {table}
@@ -25,9 +37,20 @@ export function ChartFigure({ caption, chart, table }: { caption: string; chart:
 export function PercentBarChart({ data }: { data: { label: string; value: number }[] }) {
   return (
     <ResponsiveContainer width="100%" height="100%">
-      <BarChart data={data} layout="vertical" margin={{ left: 8, right: 16 }} accessibilityLayer={false}>
+      <BarChart
+        data={data}
+        layout="vertical"
+        margin={{ left: 8, right: 16 }}
+        accessibilityLayer={false}
+      >
         <CartesianGrid stroke={GRID} horizontal={false} />
-        <XAxis type="number" domain={[0, 100]} tickFormatter={(v) => `${v}%`} stroke={MUTED} fontSize={12} />
+        <XAxis
+          type="number"
+          domain={[0, 100]}
+          tickFormatter={(v) => `${v}%`}
+          stroke={MUTED}
+          fontSize={12}
+        />
         <YAxis type="category" dataKey="label" width={170} stroke={MUTED} fontSize={12} />
         <Tooltip formatter={(v) => [`${v}%`, "Score"]} />
         <Bar dataKey="value" fill={BLUE} radius={[0, 4, 4, 0]} isAnimationActive={false} />
@@ -36,7 +59,15 @@ export function PercentBarChart({ data }: { data: { label: string; value: number
   );
 }
 
-export function ColumnChart({ data, max, unit = "" }: { data: { label: string; value: number }[]; max?: number; unit?: string }) {
+export function ColumnChart({
+  data,
+  max,
+  unit = "",
+}: {
+  data: { label: string; value: number }[];
+  max?: number;
+  unit?: string;
+}) {
   return (
     <ResponsiveContainer width="100%" height="100%">
       <BarChart data={data} margin={{ top: 8, right: 8 }} accessibilityLayer={false}>
@@ -44,7 +75,13 @@ export function ColumnChart({ data, max, unit = "" }: { data: { label: string; v
         <XAxis dataKey="label" stroke={MUTED} fontSize={12} interval={0} />
         <YAxis domain={[0, max ?? "auto"]} allowDecimals={false} stroke={MUTED} fontSize={12} />
         <Tooltip formatter={(v) => [`${v}${unit}`, ""]} />
-        <Bar dataKey="value" fill={BLUE} radius={[4, 4, 0, 0]} isAnimationActive={false} />
+        <Bar
+          dataKey="value"
+          fill={BLUE}
+          radius={[4, 4, 0, 0]}
+          maxBarSize={64}
+          isAnimationActive={false}
+        />
       </BarChart>
     </ResponsiveContainer>
   );
@@ -63,7 +100,7 @@ export function DataTable({
     <div className="overflow-x-auto rounded-[var(--radius-card)] border border-border bg-surface">
       <table className="w-full text-left text-sm">
         <caption className="sr-only">{caption}</caption>
-        <thead className="bg-canvas text-text-muted">
+        <thead className="bg-navy-900/5 text-navy-900">
           <tr>
             {headers.map((h) => (
               <th key={h} scope="col" className="px-4 py-2 font-medium">
@@ -94,11 +131,19 @@ export function DataTable({
   );
 }
 
-export function StatTile({ label, value, hint }: { label: string; value: ReactNode; hint?: string }) {
+export function StatTile({
+  label,
+  value,
+  hint,
+}: {
+  label: string;
+  value: ReactNode;
+  hint?: string;
+}) {
   return (
-    <div className="rounded-[var(--radius-card)] border border-border bg-surface p-4">
+    <div className="rounded-[var(--radius-card)] border border-border border-l-4 border-l-blue-600 bg-surface p-4 shadow-sm">
       <p className="text-sm text-text-muted">{label}</p>
-      <p className="mt-1 text-2xl font-semibold">{value}</p>
+      <p className="mt-1 text-2xl font-semibold text-navy-900">{value}</p>
       {hint && <p className="mt-1 text-xs text-text-muted">{hint}</p>}
     </div>
   );

@@ -30,6 +30,10 @@
     color: var(--color-text-primary);
     font-family: var(--font-sans);
   }
+  h1,
+  h2 {
+    color: var(--color-navy-900);
+  }
   :focus-visible {
     outline: 3px solid var(--color-blue-600);
     outline-offset: 2px;

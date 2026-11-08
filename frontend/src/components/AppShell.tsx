@@ -19,7 +19,7 @@ export function AppShell() {
   const nav = me?.role === "administrator" ? ADMIN_NAV : PARTICIPANT_NAV;
 
   return (
-    <div className="min-h-screen md:grid md:grid-cols-[240px_1fr]">
+    <div className="min-h-screen md:grid md:grid-cols-[288px_1fr]">
       <a
         href="#main"
         className="sr-only focus:not-sr-only focus:fixed focus:left-2 focus:top-2 focus:z-50 focus:rounded focus:bg-surface focus:px-3 focus:py-2"
@@ -42,14 +42,18 @@ export function AppShell() {
       </header>
       <aside
         id="primary-nav"
-        className={cn("bg-navy-900 text-white md:flex md:flex-col", open ? "flex flex-col" : "hidden")}
+        className={cn(
+          // Sticky full-height sidebar: "Sign out" stays visible however long the page is.
+          "bg-navy-900 text-white md:sticky md:top-0 md:flex md:h-screen md:flex-col md:overflow-y-auto",
+          open ? "flex flex-col" : "hidden",
+        )}
       >
-        <div className="hidden px-6 py-5 md:block">
-          <p className="text-lg font-semibold">AI Readiness</p>
-          <p className="text-xs text-white/70">Quality Engineering Assessment</p>
+        <div className="hidden px-6 py-6 md:block">
+          <p className="text-xl font-semibold">AI Readiness</p>
+          <p className="mt-0.5 text-sm text-white/75">Quality Engineering Assessment</p>
         </div>
-        <nav aria-label="Primary" className="flex-1 px-3 py-2">
-          <ul className="space-y-1">
+        <nav aria-label="Primary" className="flex-1 px-4 py-2">
+          <ul className="space-y-1.5">
             {nav.map(({ to, label, icon: Icon, end }) => (
               <li key={to}>
                 <NavLink
@@ -58,25 +62,25 @@ export function AppShell() {
                   onClick={() => setOpen(false)}
                   className={({ isActive }) =>
                     cn(
-                      "flex items-center gap-3 rounded-[var(--radius-control)] px-3 py-2 text-sm text-white/85 hover:bg-navy-800 hover:text-white",
-                      isActive && "bg-navy-800 font-semibold text-white",
+                      "flex items-center gap-3 rounded-[var(--radius-control)] border-l-4 border-transparent px-4 py-3 text-base text-white/85 hover:bg-navy-800 hover:text-white",
+                      isActive && "border-blue-600 bg-navy-800 font-semibold text-white",
                     )
                   }
                 >
-                  <Icon aria-hidden="true" className="size-4" />
+                  <Icon aria-hidden="true" className="size-5" />
                   {label}
                 </NavLink>
               </li>
             ))}
           </ul>
         </nav>
-        <div className="border-t border-white/10 px-6 py-4 text-sm">
-          <p className="truncate font-medium">{me?.display_name}</p>
-          <p className="truncate text-xs text-white/70">{me?.email}</p>
+        <div className="border-t border-white/10 px-6 py-5">
+          <p className="truncate text-base font-medium">{me?.display_name}</p>
+          <p className="truncate text-sm text-white/75">{me?.email}</p>
           <Button
-            variant="ghost"
-            size="sm"
-            className="mt-3 -ml-3 text-white hover:bg-navy-800"
+            variant="outline"
+            size="lg"
+            className="mt-4 w-full border-white/30 bg-transparent text-white hover:bg-navy-800 [&_svg]:size-5"
             onClick={() => logout.mutate(undefined, { onSettled: () => navigate("/login") })}
           >
             <LogOut aria-hidden="true" /> Sign out
