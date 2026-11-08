@@ -1,0 +1,10 @@
+flowchart LR
+  PR[GitHub pull request] --> CI[GitHub Actions planned]
+  CI --> L[Frontend lint typecheck unit tests]
+  CI --> B[Backend lint pytest migrations]
+  CI --> DB[(Disposable PostgreSQL test DB)]
+  DB --> PW[Playwright UI and API]
+  L --> G[Quality gate]
+  B --> G
+  PW --> G
+  PW --> ART[Traces and HTML reports sanitized]

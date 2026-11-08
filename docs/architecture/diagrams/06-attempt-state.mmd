@@ -1,0 +1,10 @@
+stateDiagram-v2
+  [*] --> NotStarted
+  NotStarted --> InProgress: Start valid published template
+  InProgress --> InProgress: Save answer or resume
+  InProgress --> Review: Review answers
+  Review --> InProgress: Edit answer
+  Review --> Submitted: Confirm atomic submission
+  Submitted --> [*]
+  note right of Review: Incomplete-answer policy requires approval
+  note right of Submitted: Immutable result and answers

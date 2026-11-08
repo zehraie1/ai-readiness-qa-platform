@@ -1,0 +1,6 @@
+flowchart TD
+  ROUTER[FastAPI routers and Pydantic DTOs] --> AUTH[Auth and ownership policy]
+  AUTH --> SERVICES[Attempt content scoring and recommendation services]
+  SERVICES --> REPO[SQLAlchemy repositories]
+  REPO --> DB[(PostgreSQL)]
+  SERVICES --> AUDIT[Audit events]

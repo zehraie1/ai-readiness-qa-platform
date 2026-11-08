@@ -1,0 +1,9 @@
+flowchart TD
+  S[Confirmed submission] --> V{Published snapshot and approved scoring policy?}
+  V -->|No| STOP[Block and report missing approval]
+  V -->|Yes| LOCK[Lock attempt in transaction]
+  LOCK --> A[Load immutable answers and question revisions]
+  A --> C[Apply approved scoring weights and rounding]
+  C --> R[Persist overall and competency results]
+  R --> M[Match approved versioned recommendation rules]
+  M --> COMMIT[Commit once and return stable result]

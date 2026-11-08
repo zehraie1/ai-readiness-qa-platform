@@ -1,0 +1,8 @@
+flowchart TD
+  GH[Private GitHub repository] --> CI[Approved CI workflow]
+  CI -->|After approval| FE[Render static frontend]
+  CI -->|After approval| BE[Render FastAPI web service]
+  FE -->|HTTPS API calls| BE
+  BE -->|Restricted connection| DB[(Managed PostgreSQL)]
+  SECRETS[Environment secrets] --> BE
+  USERS[Authorized users] --> FE

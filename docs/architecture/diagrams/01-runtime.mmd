@@ -1,0 +1,5 @@
+flowchart LR
+  B[Participant or admin browser] --> F[React TypeScript static app]
+  F -->|HTTPS /api/v1| A[FastAPI modular monolith]
+  A -->|SQLAlchemy transactions| P[(Managed PostgreSQL)]
+  A --> H[Health and readiness]

@@ -1,0 +1,13 @@
+flowchart TD
+  R[React Router] --> D[Participant dashboard]
+  R --> A[Assessment pages]
+  R --> U[Admin pages]
+  D --> Q[TanStack Query]
+  A --> Q
+  U --> Q
+  Q --> T[Typed fetch client]
+  T --> API[FastAPI endpoints]
+  A --> FORM[React Hook Form and Zod]
+  D --> DS[Shared accessible design components]
+  A --> DS
+  U --> DS

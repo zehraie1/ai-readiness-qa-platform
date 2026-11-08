@@ -1,0 +1,3 @@
+# Synthetic seed and migration policy
+
+No seed files or migrations are executable in this planning package. Once approved: create four track records; load approved 10 shared + 40 role-specific original questions only if approved source exists. Otherwise use conspicuously labelled synthetic demo items in development/test only, never pretend they are the researched bank. Use deterministic IDs and fixed order, rerunnable upserts, isolated test users, explicit environment guard and no production demo credentials. Test migration upgrade/downgrade on disposable databases; destructive reset only with explicit approval and never on production.

@@ -1,0 +1,11 @@
+flowchart TD
+  M[Master MD and approved research] --> C[Root CLAUDE.md]
+  C --> P[Claude Code Plan Mode]
+  P --> G{Owner approves plan?}
+  G -->|No| R[Revise plan only]
+  G -->|Yes| S[Select bounded specialist agent and skill]
+  S --> I[Future vertical slice implementation]
+  I --> V[Tests and reviews with evidence]
+  V --> N{Next phase approved?}
+  N -->|No| W[Stop]
+  N -->|Yes| S

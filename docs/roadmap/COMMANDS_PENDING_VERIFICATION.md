@@ -1,0 +1,3 @@
+# Future commands — not executed, verify first
+
+After owner approves implementation and official versions are verified, Claude Code may propose (not run automatically): `npm ci`, `npm run lint`, `npm run typecheck`, `npm run test`, `npm run build` in frontend; `python -m pytest` and `ruff check .` in backend; `npx playwright test` in tests; `alembic upgrade head` only against approved environment. No package manifests or runnable services exist yet. Actual commands will depend on approved package manager and project structure. Never run `reset`, `drop`, production migrations or deploy without explicit approval.
