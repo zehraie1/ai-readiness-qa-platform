@@ -1,0 +1,267 @@
+{
+  "content_status": "DRAFT_UNVERIFIED_PLACEHOLDER",
+  "scope": "role_specific",
+  "track_id": "qa_lead",
+  "questions": [
+    {
+      "code": "PH-LEAD-01",
+      "competency": "PH_QUALITY_LEADERSHIP",
+      "prompt": "[DRAFT] What is the best first step when introducing AI-assisted testing to a QA team?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mandate AI use for every task immediately"
+        },
+        {
+          "id": "B",
+          "text": "Buy the most expensive tool available"
+        },
+        {
+          "id": "C",
+          "text": "Replace manual testers"
+        },
+        {
+          "id": "D",
+          "text": "Run a scoped pilot with clear goals and success measures"
+        }
+      ],
+      "correct_option_id": "D",
+      "explanation": "[DRAFT] Placeholder rationale: 'Run a scoped pilot with clear goals and success measures' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-LEAD-02",
+      "competency": "PH_AI_RISK_GOVERNANCE",
+      "prompt": "[DRAFT] Which artefact helps a QA lead communicate AI-specific risks to stakeholders?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A list of tester holidays"
+        },
+        {
+          "id": "B",
+          "text": "A risk register covering likelihood, impact and mitigations for AI behaviour"
+        },
+        {
+          "id": "C",
+          "text": "The CI server logs"
+        },
+        {
+          "id": "D",
+          "text": "A screenshot of the AI tool"
+        }
+      ],
+      "correct_option_id": "B",
+      "explanation": "[DRAFT] Placeholder rationale: 'A risk register covering likelihood, impact and mitigations for AI behaviour' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-LEAD-03",
+      "competency": "PH_QUALITY_LEADERSHIP",
+      "prompt": "[DRAFT] How should a QA lead measure the impact of an AI testing tool after adoption?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Count licences purchased"
+        },
+        {
+          "id": "B",
+          "text": "Ask only the vendor"
+        },
+        {
+          "id": "C",
+          "text": "Compare agreed quality and efficiency measures before and after adoption"
+        },
+        {
+          "id": "D",
+          "text": "Count the number of prompts"
+        }
+      ],
+      "correct_option_id": "C",
+      "explanation": "[DRAFT] Placeholder rationale: 'Compare agreed quality and efficiency measures before and after adoption' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-LEAD-04",
+      "competency": "PH_QUALITY_LEADERSHIP",
+      "prompt": "[DRAFT] Team members worry that AI will replace them. What is the most constructive response?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Explain how roles evolve and provide training in reviewing and guiding AI output"
+        },
+        {
+          "id": "B",
+          "text": "Ignore the concern"
+        },
+        {
+          "id": "C",
+          "text": "Promise that AI will never be used"
+        },
+        {
+          "id": "D",
+          "text": "Reduce communication about AI"
+        }
+      ],
+      "correct_option_id": "A",
+      "explanation": "[DRAFT] Placeholder rationale: 'Explain how roles evolve and provide training in reviewing and guiding AI output' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-LEAD-05",
+      "competency": "PH_AI_RISK_GOVERNANCE",
+      "prompt": "[DRAFT] Which policy is most appropriate for using external AI tools with confidential project information?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Allow any tool without restriction"
+        },
+        {
+          "id": "B",
+          "text": "Ban all software tools"
+        },
+        {
+          "id": "C",
+          "text": "Let each tester decide privately"
+        },
+        {
+          "id": "D",
+          "text": "Define approved tools and data-handling rules aligned with organisational policy"
+        }
+      ],
+      "correct_option_id": "D",
+      "explanation": "[DRAFT] Placeholder rationale: 'Define approved tools and data-handling rules aligned with organisational policy' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-LEAD-06",
+      "competency": "PH_QUALITY_LEADERSHIP",
+      "prompt": "[DRAFT] What should a test strategy for an AI-based product explicitly include?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Only UI test cases"
+        },
+        {
+          "id": "B",
+          "text": "Only performance targets"
+        },
+        {
+          "id": "C",
+          "text": "Data, model and integration quality risks with matching test approaches"
+        },
+        {
+          "id": "D",
+          "text": "A guarantee of zero defects"
+        }
+      ],
+      "correct_option_id": "C",
+      "explanation": "[DRAFT] Placeholder rationale: 'Data, model and integration quality risks with matching test approaches' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-LEAD-07",
+      "competency": "PH_AI_ASSISTED_TESTING",
+      "prompt": "[DRAFT] An AI tool flags 200 'likely defects' in a release. How should the lead prioritise them?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Fix all 200 before release"
+        },
+        {
+          "id": "B",
+          "text": "Triage by evidence, risk and impact, verifying a sample to check the tool's accuracy"
+        },
+        {
+          "id": "C",
+          "text": "Ignore them"
+        },
+        {
+          "id": "D",
+          "text": "Forward them to customers"
+        }
+      ],
+      "correct_option_id": "B",
+      "explanation": "[DRAFT] Placeholder rationale: 'Triage by evidence, risk and impact, verifying a sample to check the tool's accuracy' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-LEAD-08",
+      "competency": "PH_QUALITY_LEADERSHIP",
+      "prompt": "[DRAFT] Which capability is most important to develop in testers working with AI systems?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Critical evaluation of outputs and risk-based thinking"
+        },
+        {
+          "id": "B",
+          "text": "Memorising model architectures"
+        },
+        {
+          "id": "C",
+          "text": "Typing speed"
+        },
+        {
+          "id": "D",
+          "text": "Writing longer test cases"
+        }
+      ],
+      "correct_option_id": "A",
+      "explanation": "[DRAFT] Placeholder rationale: 'Critical evaluation of outputs and risk-based thinking' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-LEAD-09",
+      "competency": "PH_AI_RISK_GOVERNANCE",
+      "prompt": "[DRAFT] Who should be accountable for decisions made with AI support in a QA process?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The AI tool vendor"
+        },
+        {
+          "id": "B",
+          "text": "Nobody, because the AI decided"
+        },
+        {
+          "id": "C",
+          "text": "The newest team member"
+        },
+        {
+          "id": "D",
+          "text": "Clearly identified people with the authority to act on the results"
+        }
+      ],
+      "correct_option_id": "D",
+      "explanation": "[DRAFT] Placeholder rationale: 'Clearly identified people with the authority to act on the results' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-LEAD-10",
+      "competency": "PH_QUALITY_LEADERSHIP",
+      "prompt": "[DRAFT] Which reporting practice best supports trust in AI-assisted quality metrics?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Reporting only positive metrics"
+        },
+        {
+          "id": "B",
+          "text": "Stating data sources, methods, limitations and confidence alongside results"
+        },
+        {
+          "id": "C",
+          "text": "Changing metric definitions every sprint"
+        },
+        {
+          "id": "D",
+          "text": "Removing context to keep reports short"
+        }
+      ],
+      "correct_option_id": "B",
+      "explanation": "[DRAFT] Placeholder rationale: 'Stating data sources, methods, limitations and confidence alongside results' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    }
+  ]
+}

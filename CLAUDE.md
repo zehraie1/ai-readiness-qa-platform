@@ -1,6 +1,9 @@
 # AI Readiness & Quality Engineering Assessment Platform — Claude Code Instructions
 
-## Mandatory operating mode
+## Current status
+**Implemented and approved (2026-11-08):** Slice 1 (auth, tracks, attempts, scoring, results) and v1.1 (dashboards, login throttling, security headers, GitHub Actions CI, Render demo deployment) — see ADR-007..012 and `docs/decisions/OPEN_DECISIONS.md`. Next focus: Playwright automation. Admin content management still requires separate approval. Ignore any ancestor-directory CLAUDE.md (e.g. the unrelated "Spendly" course file); this file is authoritative.
+
+## Mandatory operating mode (for work beyond the approved slice)
 **PLANNING ONLY until the project owner explicitly approves implementation.** On first open, read `docs/source/MASTER_INSTRUCTION_V1.md`, `docs/decisions/OPEN_DECISIONS.md`, `docs/research/SOURCE_REGISTER.md`, and `docs/roadmap/IMPLEMENTATION_ROADMAP.md`. In Claude Code Plan Mode, inventory and reconcile these documents; propose a phased implementation plan and STOP. Do not create application source code, install dependencies, run migrations, commit, deploy, or publish content without explicit approval. An instruction to review or plan is not permission to build.
 
 ## Mission and boundaries
@@ -30,5 +33,8 @@ Review `docs/testing/TEST_STRATEGY.md`; cover backend unit/integration, frontend
 ## Agent workflow
 Single accountable editor per change. Read relevant skill, make small plan, delegate narrow reviews, integrate sequentially, record actual evidence, stop for approvals on auth/scoring/question bank/deployment/architecture/destructive operations. `docs/roadmap/IMPLEMENTATION_ROADMAP.md` governs sequencing. Definition of Done: accepted criteria, API agreement, permissions, automated tests, accessibility, safe data changes, documentation, recorded evidence.
 
-## Safe first response in Claude Code
+## Commands
+See `README.md` → Local development (`make db-up migrate seed api web test-backend test-web test-e2e`).
+
+## Safe first response in Claude Code (for new, unapproved phases)
 Summarise supplied artifacts and missing approved research; verify local Claude Code conventions and dependency versions from official docs when access is available; propose Phase 1 plan, unresolved decisions, and file-by-file changes; ask for approval. **Do not implement.**

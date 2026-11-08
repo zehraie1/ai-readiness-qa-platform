@@ -1,0 +1,8 @@
+[
+  {"code": "PH_AI_FUNDAMENTALS", "label": "AI and ML fundamentals", "description": "[DRAFT] Core machine-learning and generative-AI concepts relevant to QA."},
+  {"code": "PH_TESTING_AI_SYSTEMS", "label": "Testing AI-based systems", "description": "[DRAFT] Techniques for testing non-deterministic and learned behaviour."},
+  {"code": "PH_DATA_QUALITY", "label": "Data quality and bias", "description": "[DRAFT] Training/evaluation data quality, representativeness and drift."},
+  {"code": "PH_AI_RISK_GOVERNANCE", "label": "AI risk, ethics and governance", "description": "[DRAFT] Privacy, fairness, transparency and accountability."},
+  {"code": "PH_AI_ASSISTED_TESTING", "label": "AI-assisted testing and automation", "description": "[DRAFT] Responsible use of AI tools in test design and automation."},
+  {"code": "PH_QUALITY_LEADERSHIP", "label": "Quality leadership for AI adoption", "description": "[DRAFT] Strategy, measurement and people leadership for AI in QA."}
+]

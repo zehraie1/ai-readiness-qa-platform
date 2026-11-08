@@ -1,0 +1,21 @@
+# Local development / test database only. Never use these credentials elsewhere.
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: airqa
+      POSTGRES_PASSWORD: airqa_dev_only
+      POSTGRES_DB: airqa
+    ports:
+      - "${DB_PORT:-5433}:5432"
+    volumes:
+      - airqa_pgdata:/var/lib/postgresql/data
+      - ./database/docker/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U airqa -d airqa"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+volumes:
+  airqa_pgdata:

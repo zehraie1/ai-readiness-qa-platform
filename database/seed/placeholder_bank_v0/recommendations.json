@@ -1,0 +1,12 @@
+{
+  "version_label": "placeholder-rec-v0",
+  "content_provenance": "placeholder_unverified",
+  "rules": [
+    {"competency": "PH_AI_FUNDAMENTALS", "title": "[DRAFT] Strengthen AI and ML fundamentals", "body": "[DRAFT] Review core concepts such as supervised learning, overfitting and probabilistic generation, then explain each in your own words with a testing example."},
+    {"competency": "PH_TESTING_AI_SYSTEMS", "title": "[DRAFT] Practise techniques for testing AI systems", "body": "[DRAFT] Apply metamorphic and property-based checks to a non-deterministic feature and document how you defined expected behaviour."},
+    {"competency": "PH_DATA_QUALITY", "title": "[DRAFT] Build data-quality checks into your testing", "body": "[DRAFT] Profile a dataset for representativeness, label consistency and drift, and add a validation test for one finding."},
+    {"competency": "PH_AI_RISK_GOVERNANCE", "title": "[DRAFT] Review AI risk and governance practices", "body": "[DRAFT] Map privacy, fairness and transparency risks for one AI feature and agree mitigations with stakeholders."},
+    {"competency": "PH_AI_ASSISTED_TESTING", "title": "[DRAFT] Use AI assistants with structured review", "body": "[DRAFT] Pair AI-generated tests with a review checklist covering correctness, flakiness, security and maintainability."},
+    {"competency": "PH_QUALITY_LEADERSHIP", "title": "[DRAFT] Plan a measured AI adoption pilot", "body": "[DRAFT] Define goals, success measures and safeguards for a small AI-in-testing pilot and share the results transparently."}
+  ]
+}

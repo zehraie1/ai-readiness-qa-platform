@@ -1,0 +1,6 @@
+[
+  {"id": "manual_qa", "name": "Manual QA Engineer", "description": "Exploratory, risk-based and acceptance testing of AI-enabled features.", "sort_order": 1},
+  {"id": "automation_qa", "name": "Automation QA Engineer", "description": "Automating tests for AI features and using AI-assisted automation responsibly.", "sort_order": 2},
+  {"id": "sdet", "name": "SDET", "description": "Engineering test infrastructure, contracts and quality gates around AI components.", "sort_order": 3},
+  {"id": "qa_lead", "name": "QA Lead", "description": "Leading quality strategy, risk and adoption of AI in testing teams.", "sort_order": 4}
+]

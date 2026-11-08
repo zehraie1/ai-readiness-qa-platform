@@ -1,0 +1,19 @@
+{
+  "version_label": "v1-simple",
+  "status": "approved",
+  "approval_reference": "DEC-02 APPROVED V1 (docs/source/MASTER_INSTRUCTION_V1_DECISIONS.md §4.4)",
+  "rules": {
+    "points_per_correct": 5,
+    "expected_questions": 20,
+    "expected_common": 10,
+    "expected_role_specific": 10,
+    "rounding": "half_up",
+    "recommendation_threshold_pct": 60,
+    "bands": [
+      {"code": "foundation", "label": "Foundation", "min": 0, "max": 39},
+      {"code": "developing", "label": "Developing", "min": 40, "max": 59},
+      {"code": "proficient", "label": "Proficient", "min": 60, "max": 79},
+      {"code": "advanced", "label": "Advanced", "min": 80, "max": 100}
+    ]
+  }
+}

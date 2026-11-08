@@ -1,0 +1,267 @@
+{
+  "content_status": "DRAFT_UNVERIFIED_PLACEHOLDER",
+  "scope": "common",
+  "track_id": null,
+  "questions": [
+    {
+      "code": "PH-COM-01",
+      "competency": "PH_AI_FUNDAMENTALS",
+      "prompt": "[DRAFT] Which description best fits supervised machine learning?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The model discovers clusters in unlabelled data without guidance"
+        },
+        {
+          "id": "B",
+          "text": "The model learns a mapping from inputs to known, labelled outputs"
+        },
+        {
+          "id": "C",
+          "text": "The model is programmed with explicit if/then rules by developers"
+        },
+        {
+          "id": "D",
+          "text": "The model improves only by receiving rewards from an environment"
+        }
+      ],
+      "correct_option_id": "B",
+      "explanation": "[DRAFT] Placeholder rationale: 'The model learns a mapping from inputs to known, labelled outputs' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-COM-02",
+      "competency": "PH_AI_FUNDAMENTALS",
+      "prompt": "[DRAFT] Why can the same prompt to a large language model return different answers on different runs?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The model is retrained after every request"
+        },
+        {
+          "id": "B",
+          "text": "The network connection alters the prompt"
+        },
+        {
+          "id": "C",
+          "text": "The test environment caches stale responses"
+        },
+        {
+          "id": "D",
+          "text": "Generation typically samples from a probability distribution over possible tokens"
+        }
+      ],
+      "correct_option_id": "D",
+      "explanation": "[DRAFT] Placeholder rationale: 'Generation typically samples from a probability distribution over possible tokens' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-COM-03",
+      "competency": "PH_AI_FUNDAMENTALS",
+      "prompt": "[DRAFT] What does 'overfitting' mean for a machine learning model?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It performs well on training data but generalises poorly to new data"
+        },
+        {
+          "id": "B",
+          "text": "It is too small to learn any useful pattern"
+        },
+        {
+          "id": "C",
+          "text": "It has been trained on more data than necessary"
+        },
+        {
+          "id": "D",
+          "text": "It returns results too slowly for production use"
+        }
+      ],
+      "correct_option_id": "A",
+      "explanation": "[DRAFT] Placeholder rationale: 'It performs well on training data but generalises poorly to new data' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-COM-04",
+      "competency": "PH_DATA_QUALITY",
+      "prompt": "[DRAFT] A model's training data under-represents one user group. What is the most likely quality risk?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Faster predictions for that group"
+        },
+        {
+          "id": "B",
+          "text": "Lower storage costs"
+        },
+        {
+          "id": "C",
+          "text": "Systematically worse or biased outcomes for that group"
+        },
+        {
+          "id": "D",
+          "text": "No impact, because models generalise automatically"
+        }
+      ],
+      "correct_option_id": "C",
+      "explanation": "[DRAFT] Placeholder rationale: 'Systematically worse or biased outcomes for that group' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-COM-05",
+      "competency": "PH_DATA_QUALITY",
+      "prompt": "[DRAFT] Why should evaluation data for a model be kept separate from its training data?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To reduce the size of the training set"
+        },
+        {
+          "id": "B",
+          "text": "To obtain an unbiased estimate of performance on unseen data"
+        },
+        {
+          "id": "C",
+          "text": "Because evaluation data must always be synthetic"
+        },
+        {
+          "id": "D",
+          "text": "So the model can memorise the expected answers"
+        }
+      ],
+      "correct_option_id": "B",
+      "explanation": "[DRAFT] Placeholder rationale: 'To obtain an unbiased estimate of performance on unseen data' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-COM-06",
+      "competency": "PH_AI_RISK_GOVERNANCE",
+      "prompt": "[DRAFT] Which practice best supports transparency when a product uses AI to support decisions?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Documenting the model's purpose, limitations and intended use for stakeholders"
+        },
+        {
+          "id": "B",
+          "text": "Hiding the use of AI to avoid user concern"
+        },
+        {
+          "id": "C",
+          "text": "Publishing the full training dataset regardless of privacy"
+        },
+        {
+          "id": "D",
+          "text": "Relying on the vendor's marketing claims"
+        }
+      ],
+      "correct_option_id": "A",
+      "explanation": "[DRAFT] Placeholder rationale: 'Documenting the model's purpose, limitations and intended use for stakeholders' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-COM-07",
+      "competency": "PH_AI_RISK_GOVERNANCE",
+      "prompt": "[DRAFT] A team plans to paste customer records into a public AI chatbot to generate test data. What is the main concern?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The chatbot may format the output incorrectly"
+        },
+        {
+          "id": "B",
+          "text": "The generated data set may be too small"
+        },
+        {
+          "id": "C",
+          "text": "It will slow down the test cycle"
+        },
+        {
+          "id": "D",
+          "text": "Personal data may be disclosed to a third party without a lawful basis"
+        }
+      ],
+      "correct_option_id": "D",
+      "explanation": "[DRAFT] Placeholder rationale: 'Personal data may be disclosed to a third party without a lawful basis' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-COM-08",
+      "competency": "PH_TESTING_AI_SYSTEMS",
+      "prompt": "[DRAFT] What is the 'test oracle problem' in the context of AI systems?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The test environment cannot connect to the model"
+        },
+        {
+          "id": "B",
+          "text": "Test cases run too slowly to be useful"
+        },
+        {
+          "id": "C",
+          "text": "It is hard to determine a single correct expected output for a given input"
+        },
+        {
+          "id": "D",
+          "text": "The model refuses to answer test prompts"
+        }
+      ],
+      "correct_option_id": "C",
+      "explanation": "[DRAFT] Placeholder rationale: 'It is hard to determine a single correct expected output for a given input' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-COM-09",
+      "competency": "PH_TESTING_AI_SYSTEMS",
+      "prompt": "[DRAFT] Which technique checks that a model's output changes in an expected way when the input is transformed?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Metamorphic testing"
+        },
+        {
+          "id": "B",
+          "text": "Smoke testing"
+        },
+        {
+          "id": "C",
+          "text": "Load testing"
+        },
+        {
+          "id": "D",
+          "text": "Static code analysis"
+        }
+      ],
+      "correct_option_id": "A",
+      "explanation": "[DRAFT] Placeholder rationale: 'Metamorphic testing' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-COM-10",
+      "competency": "PH_AI_ASSISTED_TESTING",
+      "prompt": "[DRAFT] What is the most appropriate way to treat test cases generated by an AI coding assistant?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Merge them directly because AI output is reliable"
+        },
+        {
+          "id": "B",
+          "text": "Review them like any other contribution before relying on them"
+        },
+        {
+          "id": "C",
+          "text": "Discard them, because AI-generated tests are never useful"
+        },
+        {
+          "id": "D",
+          "text": "Run them only in production"
+        }
+      ],
+      "correct_option_id": "B",
+      "explanation": "[DRAFT] Placeholder rationale: 'Review them like any other contribution before relying on them' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    }
+  ]
+}

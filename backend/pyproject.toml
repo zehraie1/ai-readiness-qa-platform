@@ -1,0 +1,21 @@
+[project]
+name = "airqa-backend"
+version = "0.1.0"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+markers = ["concurrency: uses real committed transactions on separate connections"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+extend-exclude = ["../database"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "S"]
+ignore = ["S101", "B008"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S105", "S106", "S311", "E501"]

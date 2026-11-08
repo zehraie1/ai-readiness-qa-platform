@@ -1,4 +1,40 @@
-# REST API v1 contract — PROPOSED, not implemented
+# REST API v1 contract
+
+## Slice 1 — IMPLEMENTED (2026-11-08)
+The authoritative machine-readable contract is FastAPI's generated OpenAPI (`GET /openapi.json`, UI at `/docs`
+outside production); the frontend's typed client is generated from it (`frontend/src/api/schema.d.ts`, `make gen-api`).
+
+Auth: server-side session cookie `airqa_session` (HttpOnly, SameSite=Lax), ADR-008. Unsafe `/api/*` methods require an
+allow-listed `Origin`/`Referer` (`403 CSRF_REJECTED`). No registration endpoint.
+
+| Method | Path | Permission | Success | Errors |
+|---|---|---|---|---|
+| POST | `/auth/login` `{email,password}` | Public | 200 `MeOut` + cookie | 401 `INVALID_CREDENTIALS` (same for unknown email/wrong password/inactive), 422, 429 `TOO_MANY_ATTEMPTS` + `Retry-After` |
+| POST | `/auth/logout` | Authenticated | 204, session revoked | 401 |
+| GET | `/me` | Authenticated | 200 `{id,email,display_name,role,permissions}` | 401 |
+| GET | `/assessment-tracks` | Authenticated | 200 four tracks `{id,name,description,question_count,available,content_provenance}` | 401 |
+| POST | `/attempts` `{track_id}` | Participant | 201 new / 200 existing in-progress (P1) `AttemptOut` | 403, 404 `TRACK_NOT_FOUND`, 409 `NO_PUBLISHED_TEMPLATE`/`NO_SCORING_POLICY`, 422 |
+| GET | `/attempts?status=&limit=&offset=` | Participant (own) | 200 `{items,total,limit,offset}`, limit ≤ 50 | 403, 422 |
+| GET | `/attempts/{id}` | Owner | 200 safe payload (no keys) | 404 `ATTEMPT_NOT_FOUND` |
+| PUT | `/attempts/{id}/answers/{question_id}` `{selected_option_id}` | Owner, in progress | 200 `{question_id,selected_option_id,answered_count,updated_at}` | 404 `ATTEMPT_NOT_FOUND`/`QUESTION_NOT_IN_ATTEMPT`, 409 `ATTEMPT_CLOSED`, 422 `INVALID_OPTION` |
+| GET | `/attempts/{id}/review` | Owner | 200 `{total,answered,unanswered_positions,items}` | 404 |
+| POST | `/attempts/{id}/submit` | Owner | 200 `ResultOut`; repeat returns identical body (P5) | 404, 409 `ATTEMPT_INCOMPLETE` (`details.unanswered_positions`) |
+| GET | `/attempts/{id}/results` | Owner, submitted | 200 `ResultOut` (stored snapshot, never recomputed) | 404, 409 `RESULTS_NOT_AVAILABLE` |
+| GET | `/attempts/{id}/recommendations` | Owner, submitted | 200 list | 404, 409 |
+| GET | `/admin/competencies` | Administrator | 200 list | 401, 403 |
+| GET | `/dashboard/summary` | Participant (own data) | 200 track statuses, latest competency snapshot, score history with versions | 401, 403 |
+| GET | `/admin/dashboard/summary` | Administrator | 200 aggregates only: completion by track, average score, band distribution, question coverage, data-quality warnings | 401, 403 |
+| GET | `/health`, `/ready` (outside `/api/v1`) | Public | 200 | 503 if DB unreachable |
+
+Cross-user access returns 404 indistinguishable from a missing attempt (P3). Administrators receive 403 on attempt
+endpoints (P6). Every error: `{code, message, details, request_id}`, `request_id` = `X-Request-ID` response header;
+validation errors never echo submitted input; 500s are sanitised (`INTERNAL_ERROR`).
+
+Contract tests: `backend/tests/api/*`, `tests/api/*.spec.ts`.
+
+---
+
+## Original proposal (remaining endpoints are later phases)
 
 Base `/api/v1`; authentication mechanism unresolved. JSON request/response DTOs typed by FastAPI/Pydantic and consumed by generated or typed fetch client. Never send `correct_option_id`, grading metadata, explanation revealing keys, or hidden scoring data before submission.
 

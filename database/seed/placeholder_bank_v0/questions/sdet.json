@@ -1,0 +1,267 @@
+{
+  "content_status": "DRAFT_UNVERIFIED_PLACEHOLDER",
+  "scope": "role_specific",
+  "track_id": "sdet",
+  "questions": [
+    {
+      "code": "PH-SDT-01",
+      "competency": "PH_TESTING_AI_SYSTEMS",
+      "prompt": "[DRAFT] What is the main purpose of a contract test between a service and an ML inference API?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Verify that request/response schemas and error behaviour stay compatible"
+        },
+        {
+          "id": "B",
+          "text": "Measure model accuracy"
+        },
+        {
+          "id": "C",
+          "text": "Test the user interface"
+        },
+        {
+          "id": "D",
+          "text": "Replace all unit tests"
+        }
+      ],
+      "correct_option_id": "A",
+      "explanation": "[DRAFT] Placeholder rationale: 'Verify that request/response schemas and error behaviour stay compatible' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-SDT-02",
+      "competency": "PH_AI_FUNDAMENTALS",
+      "prompt": "[DRAFT] What do precision and recall measure for a binary classifier?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Speed and memory usage"
+        },
+        {
+          "id": "B",
+          "text": "Training time and model size"
+        },
+        {
+          "id": "C",
+          "text": "Correctness of positive predictions and coverage of actual positives"
+        },
+        {
+          "id": "D",
+          "text": "The number of features and labels"
+        }
+      ],
+      "correct_option_id": "C",
+      "explanation": "[DRAFT] Placeholder rationale: 'Correctness of positive predictions and coverage of actual positives' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-SDT-03",
+      "competency": "PH_TESTING_AI_SYSTEMS",
+      "prompt": "[DRAFT] Which approach isolates application logic from a third-party LLM API in unit tests?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Calling the live API on every run"
+        },
+        {
+          "id": "B",
+          "text": "Using a test double that returns recorded or stubbed responses"
+        },
+        {
+          "id": "C",
+          "text": "Disabling tests that touch the API"
+        },
+        {
+          "id": "D",
+          "text": "Running tests only in production"
+        }
+      ],
+      "correct_option_id": "B",
+      "explanation": "[DRAFT] Placeholder rationale: 'Using a test double that returns recorded or stubbed responses' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-SDT-04",
+      "competency": "PH_DATA_QUALITY",
+      "prompt": "[DRAFT] A data pipeline feeding a model silently drops rows with null values. Which test would catch this?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A UI screenshot comparison"
+        },
+        {
+          "id": "B",
+          "text": "A load test"
+        },
+        {
+          "id": "C",
+          "text": "A spelling check"
+        },
+        {
+          "id": "D",
+          "text": "A data validation test comparing row counts and null-handling rules"
+        }
+      ],
+      "correct_option_id": "D",
+      "explanation": "[DRAFT] Placeholder rationale: 'A data validation test comparing row counts and null-handling rules' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-SDT-05",
+      "competency": "PH_AI_ASSISTED_TESTING",
+      "prompt": "[DRAFT] Where should guardrails such as output schema validation be enforced for an LLM-backed feature?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Only in the user's browser"
+        },
+        {
+          "id": "B",
+          "text": "Only in the documentation"
+        },
+        {
+          "id": "C",
+          "text": "In server-side code before the output is used or shown"
+        },
+        {
+          "id": "D",
+          "text": "Nowhere, because the model is trusted"
+        }
+      ],
+      "correct_option_id": "C",
+      "explanation": "[DRAFT] Placeholder rationale: 'In server-side code before the output is used or shown' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-SDT-06",
+      "competency": "PH_TESTING_AI_SYSTEMS",
+      "prompt": "[DRAFT] How can an SDET test the robustness of an image classifier?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Apply small perturbations such as noise or rotation and check that predictions remain stable"
+        },
+        {
+          "id": "B",
+          "text": "Test only with the training images"
+        },
+        {
+          "id": "C",
+          "text": "Check the image file names"
+        },
+        {
+          "id": "D",
+          "text": "Check only that the API returns HTTP 200"
+        }
+      ],
+      "correct_option_id": "A",
+      "explanation": "[DRAFT] Placeholder rationale: 'Apply small perturbations such as noise or rotation and check that predictions remain stable' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-SDT-07",
+      "competency": "PH_AI_ASSISTED_TESTING",
+      "prompt": "[DRAFT] When using an AI assistant to write a test framework utility, what keeps the codebase maintainable?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Accept the longest suggestion"
+        },
+        {
+          "id": "B",
+          "text": "Use a different style in each file"
+        },
+        {
+          "id": "C",
+          "text": "Avoid writing tests for the utility"
+        },
+        {
+          "id": "D",
+          "text": "State conventions in project instructions and review the output against them"
+        }
+      ],
+      "correct_option_id": "D",
+      "explanation": "[DRAFT] Placeholder rationale: 'State conventions in project instructions and review the output against them' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-SDT-08",
+      "competency": "PH_TESTING_AI_SYSTEMS",
+      "prompt": "[DRAFT] What is a sensible way to evaluate a retrieval-augmented generation (RAG) feature?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Check only the response time"
+        },
+        {
+          "id": "B",
+          "text": "Assess retrieval relevance and answer faithfulness to the retrieved sources separately"
+        },
+        {
+          "id": "C",
+          "text": "Count the words in each answer"
+        },
+        {
+          "id": "D",
+          "text": "Test only the database connection"
+        }
+      ],
+      "correct_option_id": "B",
+      "explanation": "[DRAFT] Placeholder rationale: 'Assess retrieval relevance and answer faithfulness to the retrieved sources separately' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-SDT-09",
+      "competency": "PH_DATA_QUALITY",
+      "prompt": "[DRAFT] What is 'data leakage' in model evaluation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Data being deleted by accident"
+        },
+        {
+          "id": "B",
+          "text": "A network outage during training"
+        },
+        {
+          "id": "C",
+          "text": "Information from the test set or the future influencing training and inflating metrics"
+        },
+        {
+          "id": "D",
+          "text": "Storing data in plain text"
+        }
+      ],
+      "correct_option_id": "C",
+      "explanation": "[DRAFT] Placeholder rationale: 'Information from the test set or the future influencing training and inflating metrics' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-SDT-10",
+      "competency": "PH_AI_ASSISTED_TESTING",
+      "prompt": "[DRAFT] Which practice best limits risk when an AI agent can run commands in a development environment?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Least-privilege permissions plus approval for destructive actions"
+        },
+        {
+          "id": "B",
+          "text": "Administrator rights to save time"
+        },
+        {
+          "id": "C",
+          "text": "Permission to push directly to production"
+        },
+        {
+          "id": "D",
+          "text": "Disabling logs of its actions"
+        }
+      ],
+      "correct_option_id": "A",
+      "explanation": "[DRAFT] Placeholder rationale: 'Least-privilege permissions plus approval for destructive actions' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "content_status": "DRAFT_UNVERIFIED_PLACEHOLDER",
+  "scope": "role_specific",
+  "track_id": "automation_qa",
+  "questions": [
+    {
+      "code": "PH-AUT-01",
+      "competency": "PH_AI_ASSISTED_TESTING",
+      "prompt": "[DRAFT] An AI tool proposes self-healing locators for UI tests. What is the main risk?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tests will always run more slowly"
+        },
+        {
+          "id": "B",
+          "text": "Tests may silently pass against the wrong element and hide real defects"
+        },
+        {
+          "id": "C",
+          "text": "Locators become shorter"
+        },
+        {
+          "id": "D",
+          "text": "There is no risk"
+        }
+      ],
+      "correct_option_id": "B",
+      "explanation": "[DRAFT] Placeholder rationale: 'Tests may silently pass against the wrong element and hide real defects' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-AUT-02",
+      "competency": "PH_AI_ASSISTED_TESTING",
+      "prompt": "[DRAFT] What is the safest way to use an AI assistant to generate automation code for a new page?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Commit the generated code without running it"
+        },
+        {
+          "id": "B",
+          "text": "Disable code review for generated code"
+        },
+        {
+          "id": "C",
+          "text": "Give the assistant production credentials"
+        },
+        {
+          "id": "D",
+          "text": "Run, review and refactor the code to match framework conventions before merging"
+        }
+      ],
+      "correct_option_id": "D",
+      "explanation": "[DRAFT] Placeholder rationale: 'Run, review and refactor the code to match framework conventions before merging' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-AUT-03",
+      "competency": "PH_TESTING_AI_SYSTEMS",
+      "prompt": "[DRAFT] How should an automated test assert on output from a non-deterministic text-generation API?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Check properties such as format, constraints and required facts rather than an exact string"
+        },
+        {
+          "id": "B",
+          "text": "Compare the full response with a fixed string"
+        },
+        {
+          "id": "C",
+          "text": "Skip assertions entirely"
+        },
+        {
+          "id": "D",
+          "text": "Retry until the exact expected string appears"
+        }
+      ],
+      "correct_option_id": "A",
+      "explanation": "[DRAFT] Placeholder rationale: 'Check properties such as format, constraints and required facts rather than an exact string' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-AUT-04",
+      "competency": "PH_DATA_QUALITY",
+      "prompt": "[DRAFT] Which approach gives automated tests stable, privacy-safe data for an AI feature?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Copy production data into the test repository"
+        },
+        {
+          "id": "B",
+          "text": "Generate unseeded random data on every run"
+        },
+        {
+          "id": "C",
+          "text": "Use versioned synthetic datasets with documented characteristics"
+        },
+        {
+          "id": "D",
+          "text": "Ask developers to type data manually"
+        }
+      ],
+      "correct_option_id": "C",
+      "explanation": "[DRAFT] Placeholder rationale: 'Use versioned synthetic datasets with documented characteristics' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-AUT-05",
+      "competency": "PH_AI_ASSISTED_TESTING",
+      "prompt": "[DRAFT] Which measure best indicates whether AI-assisted test generation is adding value?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Number of generated lines of code"
+        },
+        {
+          "id": "B",
+          "text": "Number of prompts written"
+        },
+        {
+          "id": "C",
+          "text": "Generation speed regardless of quality"
+        },
+        {
+          "id": "D",
+          "text": "Defects found and maintenance effort compared with existing tests"
+        }
+      ],
+      "correct_option_id": "D",
+      "explanation": "[DRAFT] Placeholder rationale: 'Defects found and maintenance effort compared with existing tests' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-AUT-06",
+      "competency": "PH_TESTING_AI_SYSTEMS",
+      "prompt": "[DRAFT] An automated regression suite for a model endpoint should run when…",
+      "options": [
+        {
+          "id": "A",
+          "text": "Only once before the first release"
+        },
+        {
+          "id": "B",
+          "text": "The model, its configuration, prompts or data pipeline change"
+        },
+        {
+          "id": "C",
+          "text": "Only when the user interface changes"
+        },
+        {
+          "id": "D",
+          "text": "Never, because models are tested by data scientists"
+        }
+      ],
+      "correct_option_id": "B",
+      "explanation": "[DRAFT] Placeholder rationale: 'The model, its configuration, prompts or data pipeline change' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-AUT-07",
+      "competency": "PH_AI_ASSISTED_TESTING",
+      "prompt": "[DRAFT] An AI assistant suggests adding a fixed sleep to fix a flaky UI test. What is the better approach?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Use web-first assertions or explicit waits for the expected state"
+        },
+        {
+          "id": "B",
+          "text": "Increase the sleep until the test passes"
+        },
+        {
+          "id": "C",
+          "text": "Delete the test"
+        },
+        {
+          "id": "D",
+          "text": "Mark the test as passing"
+        }
+      ],
+      "correct_option_id": "A",
+      "explanation": "[DRAFT] Placeholder rationale: 'Use web-first assertions or explicit waits for the expected state' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-AUT-08",
+      "competency": "PH_DATA_QUALITY",
+      "prompt": "[DRAFT] Why should golden datasets used for model regression tests be version-controlled?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To make them larger"
+        },
+        {
+          "id": "B",
+          "text": "Because version control encrypts data automatically"
+        },
+        {
+          "id": "C",
+          "text": "So that result changes can be traced to changes in data or model"
+        },
+        {
+          "id": "D",
+          "text": "To avoid running the tests"
+        }
+      ],
+      "correct_option_id": "C",
+      "explanation": "[DRAFT] Placeholder rationale: 'So that result changes can be traced to changes in data or model' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-AUT-09",
+      "competency": "PH_TESTING_AI_SYSTEMS",
+      "prompt": "[DRAFT] In a CI pipeline, what is a sensible quality gate for a classification model?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The build always passes"
+        },
+        {
+          "id": "B",
+          "text": "Key metrics on a held-out dataset must not fall below agreed thresholds"
+        },
+        {
+          "id": "C",
+          "text": "The model file must be smaller than 1 MB"
+        },
+        {
+          "id": "D",
+          "text": "The pipeline must only run on Fridays"
+        }
+      ],
+      "correct_option_id": "B",
+      "explanation": "[DRAFT] Placeholder rationale: 'Key metrics on a held-out dataset must not fall below agreed thresholds' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    },
+    {
+      "code": "PH-AUT-10",
+      "competency": "PH_AI_ASSISTED_TESTING",
+      "prompt": "[DRAFT] Which statement about AI-generated test code is most accurate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "AI output never carries licence obligations"
+        },
+        {
+          "id": "B",
+          "text": "Security scanning is unnecessary for generated code"
+        },
+        {
+          "id": "C",
+          "text": "Generated code cannot contain secrets"
+        },
+        {
+          "id": "D",
+          "text": "Generated code should pass the same security and dependency checks as other code"
+        }
+      ],
+      "correct_option_id": "D",
+      "explanation": "[DRAFT] Placeholder rationale: 'Generated code should pass the same security and dependency checks as other code' is the intended answer. Requires expert review.",
+      "evidence_reference": "PLACEHOLDER - no approved source (DEC-01 pending)"
+    }
+  ]
+}

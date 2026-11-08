@@ -1,0 +1,33 @@
+# Render Blueprint (free plan). Connect this repository via Render Dashboard -> New -> Blueprint.
+# You will be asked for the two SEED_* passwords (min. 12 characters). They are the demo account passwords.
+services:
+  - type: web
+    name: ai-readiness-qa
+    runtime: docker
+    plan: free
+    region: frankfurt
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: ai-readiness-qa-db
+          property: connectionString
+      - key: APP_ENV
+        value: demo
+      - key: SEED_ADMIN_PASSWORD
+        sync: false
+      - key: SEED_PARTICIPANT_PASSWORD
+        sync: false
+      - key: LOG_LEVEL
+        value: INFO
+
+databases:
+  - name: ai-readiness-qa-db
+    plan: free
+    region: frankfurt
+    databaseName: airqa
+    user: airqa
+    postgresMajorVersion: "17"
+    ipAllowList: []  # internal connections from the web service only

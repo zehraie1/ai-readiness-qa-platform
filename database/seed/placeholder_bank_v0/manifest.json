@@ -1,0 +1,9 @@
+{
+  "version_label": "placeholder-v0",
+  "content_provenance": "placeholder_unverified",
+  "content_status": "DRAFT_UNVERIFIED_PLACEHOLDER",
+  "not_for_production": true,
+  "scoring_policy": "v1-simple",
+  "recommendation_rule_version": "placeholder-rec-v0",
+  "notes": "Original draft questions for development and testing only (ADR-010). Not research-backed; replace once DEC-01 is approved."
+}
